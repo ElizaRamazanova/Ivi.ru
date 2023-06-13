@@ -1,0 +1,151 @@
+.recenzion {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__feedback {
+        width: 99.09px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 976px;
+        padding: 12px;
+    }
+
+    &__feedback__text_position {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__feedback__text_main {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #ffffff;
+    }
+
+    &__feedback__text_count {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #a5a1b2;
+    }
+
+    &__feedback__button_style {
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #ffffff;
+        background: none;
+        border: 1px solid grey;
+        border-radius: 5px;
+        width: 104px;
+        padding: 2px;
+    }
+
+    .recenzion__allStyles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    &__styles {
+        width: 596px;
+        height: 222px;
+        background: #1f1b2e;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    &__styles_author {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #a5a1b2;
+        padding: 8px;
+    }
+
+    &__styles_title_serial {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+    }
+
+    &__styles_description {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #ffffff;
+        padding: 16px;
+    }
+
+    &__styles_date {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #a5a1b2;
+    }
+
+    @media (max-width: 991.98px) {
+        .recenzion {
+            max-width: 100%;
+        }
+
+        &__feedback {
+            gap: 24px;
+        }
+
+        &__feedback__text_position {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        &__feedback {
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
+
+        &__styles {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        &__feedback__text_count {
+            display: none;
+        }
+
+        &__styles_author {
+            padding: 4px;
+        }
+
+        &__styles_title_serial {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__styles_description {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            color: #ffffff;
+            padding: 16px;
+        }
+        &__styles_date {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: #a5a1b2;
+        }
+    }
+}

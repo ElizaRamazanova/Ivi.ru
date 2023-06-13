@@ -1,0 +1,278 @@
+.mainDescription {
+    padding: 180px;
+    .container {
+        display: grid;
+        grid-template-columns: (1fr 1fr);
+        grid-gap: 76.5px;
+        @media (max-width: 991.98px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__video {
+        width: 719px;
+        height: 404px;
+    }
+    .mainVideo {
+        &__buttons {
+            display: grid;
+            grid-template-columns: (1fr 1fr);
+            grid-gap: 350px;
+            @media (max-width: 991.98px) {
+                grid-gap: 50px;
+            }
+
+            @media (max-width: 767.98px) {
+                grid-template-columns: 1fr;
+                grid-gap: 24px;
+            }
+        }
+        &__twoButtons {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        &__buttonTrailer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px;
+            color: rgba(255, 255, 255, 0.72);
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            width: 109px;
+            height: 40px;
+        }
+        &__buttonDownload {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+        }
+        &__buttonFree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px;
+            color: rgba(255, 255, 255, 0.72);
+            width: 204.84px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+        }
+    }
+    .textDetails {
+        margin: 0 auto;
+        &__movieTitle {
+            font-family: "Inter";
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 56px;
+            color: #ffffff;
+            padding: 16px;
+            text-align: center;
+        }
+        &__movieYear {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 15px;
+            color: rgba(255, 255, 255, 0.72);
+            padding: 6px;
+            text-align: center;
+        }
+        &__movieStyle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            color: #ffffff;
+            width: 54.66px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.16);
+            border-radius: 4px;
+            text-align: center;
+        }
+        &__movieGenre {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px;
+        }
+        &__genreStyle {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 15px;
+            color: rgba(255, 255, 255, 0.72);
+        }
+        &__movieF {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+        &__movieLanguage {
+            display: flex;
+            align-items: center;
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            background: none;
+        }
+        &__raiting {
+            display: flex;
+            align-items: center;
+            padding: 27px;
+            gap: 20px;
+        }
+        &__myIviStyle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            background: rgba(255, 255, 255, 0.16);
+            border-radius: 12px;
+        }
+        &__myIviStyleRate {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px;
+            color: #ffffff;
+            width: 44px;
+            height: 44px;
+            background: #73a32f;
+            border-radius: 8px;
+        }
+        &__myIviStyleTitle {
+            text-align: center;
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 13px;
+            color: rgba(255, 255, 255, 0.48);
+            width: 52px;
+        }
+        &__myIvi {
+            width: 56px;
+            display: grid;
+            row-gap: 8px;
+            border-radius: 12px;
+        }
+        &__imageStyle {
+            border-radius: 10px;
+            width: 44px;
+            height: 44px;
+            object-fit: cover;
+        }
+        &__titleStyle {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.48);
+        }
+        &__movieDescriptionGenre_text {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: rgba(255, 255, 255, 0.72);
+        }
+        &__movieDescriptionGenre_button {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 15px;
+            color: rgba(255, 255, 255, 0.48);
+            border: none;
+            background: none;
+            padding: 12px;
+        }
+        &__iviRating_descriptions {
+            display: grid;
+            grid-template-columns: (1fr 1fr 1fr);
+            align-items: center;
+            gap: 10px;
+        }
+        &__iviRating_backgroundDark {
+            width: 441px;
+            height: 84px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__iviRating_descriptions_greenBox {
+            width: 64px;
+            height: 64px;
+            left: 10px;
+            top: calc(50% - 64px / 2);
+            background: #73a32f;
+            border-radius: 8px;
+        }
+        &__iviRating_background_green_dots {
+            font-family: "Inter";
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+        }
+        &__iviRating_descriptions_textIvi {
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px;
+            color: #ffffff;
+        }
+        &__iviRating_descriptions_textSujet {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(255, 255, 255, 0.72);
+        }
+        &__iviRating_descriptions_textRate {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: rgba(255, 255, 255, 0.72);
+        }
+        &__iviRating_buttonStyle_btn {
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            color: #ffffff;
+            border: 1px solid grey;
+            background: none;
+            border-radius: 5px;
+            padding: 2px;
+            cursor: pointer;
+        }
+    }
+}

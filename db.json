@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "email": "er230494@gmail.com",
+      "password": "$2a$10$ptCOLWg1lGRL4mUwPbkd1eRfNtqboymlXqaj3kgCd6X7O6ZCZE.Ti",
+      "username": "omurbekov_melis",
+      "id": 1
+    },
+    {
+      "email": "er2304942121@gmail.com",
+      "password": "$2a$10$3DwDTM9ext6.3TIX2zYI0er3gLlXuIZ.3tFz6t09yEiItCWC44R7i",
+      "username": "omurbekov_melis",
+      "id": 2
+    },
+    {
+      "email": "er230494asda2121@gmail.com",
+      "password": "$2a$10$v5JwdKBNiMQ8XuiOS8YzzuOdkYBWko3xsYI3Ux50ifI7h/oPp.pYK",
+      "username": "omurbekov_melisasda",
+      "id": 3
+    },
+    {
+      "email": "er23049421asda2121@gmail.com",
+      "password": "$2a$10$Q82nXq730lCb2371ouyTyeFHQ/xRk9qRPnX6jiGzgi25oR80/6EUq",
+      "username": "omurbekov_melisa12sda",
+      "id": 4
+    },
+    {
+      "email": "er23049123123421asda2121@gmail.com",
+      "password": "$2a$10$zJVow9ACaZVfrBZAALLzTecPVhpvkw.9y5a9WbGez70F6jYeu4GUu",
+      "username": "omurbekov_melis23123a12sda",
+      "id": 5
+    },
+    {
+      "email": "eliza_230494@mail.ru",
+      "password": "$2a$10$PYrA/TnVv5.BPh5QUYRZuuIRfYf332XvfbCREpNuLEEhFbYpt3ujG",
+      "username": "omurbekov_melis",
+      "id": 6
+    },
+    {
+      "email": "sardor@mail.ru",
+      "password": "$2a$10$uqpp7LzVddRnYKkBm41dTuIkVMVnTsZrBBLOljfTa2iWODG8IMpJi",
+      "username": "sardor",
+      "id": 7
+    }
+  ]
+}

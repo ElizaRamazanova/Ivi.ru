@@ -1,0 +1,187 @@
+// .ShowGadjet {
+//     max-width: 1200px;
+//     margin: 122px auto;
+//     display: grid;
+//     grid-template-columns: (1fr 1fr);
+//     gap: 105px;
+//     &__text_main {
+//         width: 514.81px;
+//         font-family: "Inter";
+//         font-weight: 700;
+//         font-size: 24px;
+//         line-height: 28px;
+//         color: #ffffff;
+//         padding-bottom: 12px;
+//     }
+//     &__text_description {
+//         width: 453px;
+//         font-family: "Inter";
+//         font-weight: 400;
+//         font-size: 14px;
+//         line-height: 20px;
+//         align-items: center;
+//         color: #a5a1b2;
+//         padding-bottom: 24px;
+//     }
+//     &__text_button {
+//         font-family: "Inter";
+//         font-weight: 500;
+//         font-size: 15px;
+//         line-height: 20px;
+//         color: #ffffff;
+//         width: 215px;
+//         height: 40px;
+//         background: #ea003d;
+//         border: 1px solid #ea003d;
+//         border-radius: 8px;
+//         cursor: pointer;
+//     }
+//     &__text_ivi {
+//         font-family: "Inter";
+//         font-weight: 500;
+//         font-size: 15px;
+//         line-height: 15px;
+//         color: rgba(255, 255, 255, 0.56);
+//     }
+//     &__text_all {
+//         display: flex;
+//         flex-direction: row;
+//         gap: 16px;
+//     }
+// }
+
+.ShowGadjet {
+    max-width: 1200px;
+    margin: 122px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 105px;
+    &__text_main {
+        width: 514.81px;
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #ffffff;
+        padding-bottom: 12px;
+    }
+
+    &__text_description {
+        width: 453px;
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        align-items: center;
+        color: #a5a1b2;
+        padding-bottom: 24px;
+    }
+
+    &__text_button {
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        color: #ffffff;
+        width: 215px;
+        height: 40px;
+        background: #ea003d;
+        border: 1px solid #ea003d;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    &__text_ivi {
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 15px;
+        color: rgba(255, 255, 255, 0.56);
+    }
+
+    &__text_all {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .ShowGadjet {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin: 80px auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ShowGadjet {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        margin: 60px auto;
+        &__text_main {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 8px;
+        }
+
+        &__text_description {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 16px;
+        }
+
+        &__text_all {
+            flex-direction: column;
+            gap: 8px;
+        }
+        &__text_main {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &__text_description {
+            font-size: 12px;
+            line-height: 16px;
+            padding-bottom: 20px;
+        }
+
+        &__text_button {
+            width: 180px;
+            height: 36px;
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .ShowGadjet {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+
+        &__text {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-content: center;
+        }
+        &__text_main {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__text_description {
+            font-size: 12px;
+            line-height: 13px;
+            padding-bottom: 15px;
+        }
+
+        &__text_button {
+            width: 180px;
+            height: 36px;
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+}

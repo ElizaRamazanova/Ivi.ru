@@ -1,0 +1,72 @@
+.actorsStyles {
+    display: grid;
+    justify-content: center;
+    padding: 68px;
+
+    &__text {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 24px;
+        color: #ffffff;
+    }
+
+    &__allView {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__view {
+        padding: 22px;
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+
+        @media (max-width: 991.98px) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        @media (max-width: 767.98px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 575.98px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__photo {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__name {
+        width: 49px;
+        height: 16px;
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #d9d7e0;
+    }
+
+    &__button {
+        width: 88px;
+        height: 88px;
+        background: #1f1b2e;
+        border-radius: 44px;
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #a5a1b2;
+        cursor: pointer;
+    }
+}

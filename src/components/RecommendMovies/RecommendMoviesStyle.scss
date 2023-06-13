@@ -1,0 +1,112 @@
+.wrapper {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 48px;
+    .recommendStyles {
+        max-width: 1216px;
+        width: 100%;
+        margin: 0 auto;
+        &__posterText {
+            padding: 24px;
+            padding-left: 0;
+            font-family: "Inter";
+            font-weight: 700;
+            font-size: 24px;
+            color: #ffffff;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        &__block {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            gap: 34px;
+            padding-bottom: 10px;
+            &::-webkit-scrollbar {
+                height: 8px;
+                cursor: pointer;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #4a339a5d;
+                cursor: pointer;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: rgb(169, 169, 169);
+                cursor: pointer;
+            }
+        }
+        &__posterImage {
+            object-fit: contain;
+            border-radius: 8px;
+            width: 153.14px;
+            height: 235.05px;
+        }
+
+        &__movie-title {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            color: #d9d7e0;
+        }
+        &__favorite-btn {
+            padding: 3px 9px;
+            background-color: #414441;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 991.98px) {
+            &__posterText {
+                padding: 16px;
+                font-size: 20px;
+            }
+            &__posterImage {
+                width: 123.31px;
+                height: 189.74px;
+            }
+            &__movie-title {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            _posterText {
+                padding: 12px;
+                font-size: 18px;
+            }
+            &__posterImage {
+                width: 100px;
+                height: 153.85px;
+            }
+            &__movie-title {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            &__block {
+                gap: 10px;
+            }
+            &__posterText {
+                padding: 8px;
+                font-size: 16px;
+            }
+            &__posterImage {
+                width: 120px;
+                height: 150px;
+                object-fit: cover;
+            }
+            &__movie-title {
+                font-size: 12px;
+            }
+        }
+    }
+}

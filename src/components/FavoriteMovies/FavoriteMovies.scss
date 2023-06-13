@@ -1,0 +1,59 @@
+.favoriteMovies {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 60px 0;
+}
+
+.favoriteMovies__maintext {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #d9d7e0;
+    padding-bottom: 60px;
+}
+
+.favoriteMovies__mainTaxtwrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favoriteMovies__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.favoriteMovies__image {
+    object-fit: contain;
+    border-radius: 8px;
+    width: 153.14px;
+    height: 235.05px;
+}
+
+.favoriteMovies__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #d9d7e0;
+}
+
+@media (max-width: 991.98px) {
+    .favoriteMovies__wrap {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .favoriteMovies__wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .favoriteMovies__wrap {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,66 @@
+.comedyStyle {
+    &__posterText {
+        padding: 24px;
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 24px;
+        color: #ffffff;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    &__posterImage {
+        object-fit: contain;
+        border-radius: 8px;
+        width: 153.14px;
+        height: 235.05px;
+    }
+    &__movie-title {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: #d9d7e0;
+    }
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: rgba(255, 255, 255, 0.72);
+    width: 12px;
+}
+
+@media (max-width: 991.98px) {
+    .comedyStyle {
+        &__posterImage {
+            width: 125px;
+            height: 192px;
+        }
+        &__movie-title {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .comedyStyle {
+        &__posterImage {
+            width: 110px;
+            height: 168px;
+        }
+        &__movie-title {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .comedyStyle {
+        &__posterImage {
+            width: 90px;
+            height: 138px;
+        }
+        &__movie-title {
+            font-size: 12px;
+        }
+    }
+}

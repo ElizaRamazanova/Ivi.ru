@@ -1,0 +1,211 @@
+.SujetStyles {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 58px;
+    .Sujet {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        width: 100%;
+
+        &__mainText {
+            font-family: "Inter";
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 28px;
+            color: #ffffff;
+            padding: 26px;
+        }
+        &__iconText {
+            display: flex;
+            align-items: center;
+        }
+        &__textSpoiler {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #a5a1b2;
+            padding: 10px;
+        }
+        &__mainDescription_text {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            color: rgba(255, 255, 255, 0.72);
+        }
+        &__mainDescription_button {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 15px;
+            color: rgba(255, 255, 255, 0.48);
+            background: none;
+            padding-bottom: 58px;
+        }
+    }
+    .Sujet__mainDescription {
+        width: 100%;
+        max-width: 549.59px;
+    }
+    &__feedback {
+        // width: 99.09px;
+        display: grid;
+        grid-template-columns: (1fr 1fr);
+        gap: 976px;
+    }
+    &__feedback__text_position {
+        display: flex;
+        justify-content: end;
+    }
+    &__feedback__text_main {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #ffffff;
+    }
+    &__feedback__text_count {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #a5a1b2;
+    }
+    &__feedback__text_serialTitle {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #a5a1b2;
+        padding-bottom: 14px;
+    }
+    &__feedback__button_style {
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #ffffff;
+        background: none;
+        border: 1px solid grey;
+        border-radius: 5px;
+        width: 104px;
+        padding: 2px;
+    }
+    &__author {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #a5a1b2;
+    }
+    &__review {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #ffffff;
+    }
+    &__date {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #a5a1b2;
+    }
+    .mySwiper {
+        width: 100%;
+        height: 162px;
+
+        .mySwiper .swiper-slide-square {
+            width: 162px;
+        }
+    }
+
+    &__author {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #a5a1b2;
+    }
+    &__box {
+        background: #1f1b2e;
+        border-radius: 10px;
+        padding: 20px;
+        height: 162px;
+    }
+    &__review {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #ffffff;
+        height: 85px;
+        overflow: hidden;
+    }
+    &__date {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #a5a1b2;
+        margin-top: 10px;
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.SujetStyles__feedback__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.SujetStyles__feedback__button_style {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}

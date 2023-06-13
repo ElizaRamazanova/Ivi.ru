@@ -1,0 +1,101 @@
+.wrapper {
+    width: 100%;
+    padding: 0 20px;
+    .grid-container {
+        max-width: 1216px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.16);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+        padding: 49px 0;
+        .aboutUs {
+            width: 100%;
+            &__about {
+                font: 700 15px/20px "Inter";
+                color: #ffffff;
+            }
+            &__list {
+                font: 400 14px/20px "Inter";
+                color: rgba(255, 255, 255, 0.48);
+                margin: 8px 0;
+                display: grid;
+                gap: 8px;
+            }
+            &__button {
+                font-family: "Inter";
+                font-weight: 500;
+                font-size: 14px;
+                color: #ffffff;
+                max-width: 196px;
+                background: #1f1b2e;
+                border: 1px solid #1f1b2e;
+                border-radius: 8px;
+                padding: 11px 37px;
+                cursor: pointer;
+                margin: 20px 0 12px;
+            }
+            &__iconsms {
+                background: #1f1b2e;
+                border-radius: 8px;
+                width: 40px;
+                height: 40px;
+                padding: 13px 12px;
+                margin-right: 12px;
+            }
+            &__iconphone {
+                background: #1f1b2e;
+                border-radius: 8px;
+                width: 40px;
+                height: 40px;
+                padding: 13px 12px;
+            }
+            &__site {
+                font-family: "Inter";
+                font-weight: 400;
+                font-size: 15px;
+                color: #ffffff;
+            }
+            &__site:hover {
+                text-decoration: underline;
+                color: #e36c6c;
+            }
+            &__answer {
+                font-family: "Inter";
+                font-weight: 400;
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.48);
+            }
+            &__iconFilms {
+                height: 104px;
+                width: 104px;
+                border-radius: 20px;
+                object-fit: none;
+            }
+            &__text {
+                font-family: "Inter";
+                font-weight: 400;
+                font-size: 14px;
+                color: #a5a1b2;
+                max-width: 206px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .wrapper {
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .wrapper {
+        .grid-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

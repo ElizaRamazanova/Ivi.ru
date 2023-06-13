@@ -1,0 +1,77 @@
+.wrapper {
+    width: 100%;
+    padding: 0 20px;
+    .onlineCinema {
+        max-width: 1216px;
+        width: 100%;
+        margin: 0 auto;
+
+        &__block {
+            display: grid;
+            gap: 14px;
+            max-width: 830px;
+        }
+        &__online {
+            font-family: "Inter";
+            font-weight: 700;
+            font-size: 20px;
+            color: #ffffff;
+        }
+        &__showFilm {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 14px;
+            color: #a5a1b2;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &__return {
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.88);
+            width: 87.17px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    .onlineCinema {
+        &__online {
+            width: 100%;
+        }
+        &__showFilm {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .onlineCinema {
+        &__online {
+            font-size: 18px;
+        }
+        &__showFilm {
+            font-size: 12px;
+        }
+        &__return {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .onlineCinema {
+        &__online {
+            font-size: 16px;
+        }
+        &__showFilm {
+            font-size: 11px;
+        }
+        &__return {
+            font-size: 12px;
+        }
+    }
+}
