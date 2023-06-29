@@ -2,8 +2,16 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './RegistrForm.scss';
 
+
+interface RegistrResponseType {
+    username: string;
+    email: string;
+    password: string;
+}
+
+
 function RegistrForm() {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<RegistrResponseType>({
         email: '',
         password: '',
         username: ''
@@ -77,9 +85,7 @@ function RegistrForm() {
                 >Зарегистрироваться
                 </button>
                 <Link to='/' className='link'>Назад</Link>
-                <button className='inputs_button'>
-                    <Link to='/login' className='link'>Войти</Link>
-                </button>
+                <Link to='/login' className='inputs_button'>Войти</Link>
             </form>
         </div>
     );

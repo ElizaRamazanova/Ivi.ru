@@ -7,6 +7,9 @@ import { useGetPosterQuery } from '../../Store/Services/getPoster';
 import './MySwiperStyles.scss'
 
 
+
+
+
 const MySwiper = () => {
     const { data, isError, error, isLoading, refetch } = useGetPosterQuery();
     if (isLoading) {

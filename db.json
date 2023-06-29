@@ -41,6 +41,20 @@
       "password": "$2a$10$uqpp7LzVddRnYKkBm41dTuIkVMVnTsZrBBLOljfTa2iWODG8IMpJi",
       "username": "sardor",
       "id": 7
+    },
+    {
+      "email": "Sardro@mail.ru",
+      "password": "$2a$10$kKxrWHopDt6YA19.qY.wM./S4b/WfgVefL1OueaUfVCKsYQ7MsGni",
+      "username": "Sardro",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 0,
+      "author": "asdasd",
+      "review": "asdasd",
+      "date": "asdasd"
     }
   ]
 }

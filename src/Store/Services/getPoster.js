@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { URL_V1 } from '../../Config/Config'
+import { URL_V1 } from '../../Config/Config.tsx'
 
 export const posterApi = createApi({
     reducerPath: 'posterApi',

@@ -1,5 +1,6 @@
 import React from 'react';
 import './FavoriteMovies.scss'
+import Card from '../Card/Card.tsx';
 
 const FavoriteMovies = () => {
     const storedFavorites = JSON.parse(localStorage.getItem('favorites'));
@@ -13,10 +14,7 @@ const FavoriteMovies = () => {
 
                 <div className='favoriteMovies__wrap'>
                     {storedFavorites.map((movieId) => (
-                        <div key={movieId.id}>
-                            <img className='favoriteMovies__image' src={movieId?.poster?.previewUrl} alt={movieId.title} />
-                            <p className='favoriteMovies__title'>{movieId.alternativeName}</p>
-                        </div>
+                        <Card movie={movieId} />
                     ))}
                 </div>
 

@@ -1,7 +1,16 @@
 import React from 'react'
 import './ActorsStyles.scss'
+import { MovieId, MovieResp } from '../../../shared/models/index'
+type Props = {
+    actorsToDisplay: MovieId[] | any,
+    showAllActors: boolean,
+    movieData: MovieResp | undefined,
+    onClickShow: () => void,
+}
 
-const ActorsStyles = ({ actorsToDisplay, showAllActors, movieData, onClickShow }) => {
+
+const ActorsStyles = ({ actorsToDisplay, showAllActors, movieData, onClickShow }: Props) => {
+
     return (
         <div className="actorsStyles">
             <p className="actorsStyles__text">Актёры и создатели</p>

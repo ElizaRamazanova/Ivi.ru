@@ -10,13 +10,9 @@ const ShowGadjet = () => {
                 <p className='ShowGadjet__text_description'>Приложение доступно для скачивания на iOS, Android, SmartTV и
                     приставках</p>
                 <button className='ShowGadjet__text_button'>Подключить устройства</button>
-
-
-
             </div>
             <div className='ShowGadjet__image'>
                 <img src={nevski} alt="image" />
-
             </div>
             <div className='ShowGadjet__text_all'>
                 <p className='ShowGadjet__text_ivi'>Мой Иви</p>

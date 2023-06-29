@@ -1,17 +1,50 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import danjer from '../../../assets/icons/danjer.png';
 import './SujetStyles.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import dayjs from 'dayjs';
 
-const SujetStyles = ({ data }) => {
+interface DocsData {
+    author: string,
+    date: string,
+    id: number,
+    movieId: number,
+    review: string,
+    title: string,
+    type: string,
+}
+
+interface IProps {
+    data: DocsData[] | undefined
+    movieId: boolean,
+}
+interface IReview {
+    id: number,
+    review: string,
+    date: string,
+    movieId: string,
+    author: string
+}
+
+const SujetStyles = ({ data, movieId }: IProps) => {
     const [userReview, setUserReview] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [movieReviews, setMovieReviews] = useState<IReview[]>([]);
 
-    const handleReviewSubmit = () => {
+
+    useEffect(() => {
+        const existingReviews = JSON.parse(localStorage.getItem('reviews') || '[]');
+        const filteredReviews = existingReviews.filter((review) => review.movieId === movieId);
+        setMovieReviews(filteredReviews);
+    }, [movieId]);
+
+
+    const handleReviewSubmit = (): void => {
         if (userReview) {
-            const existingReviews = JSON.parse(localStorage.getItem('reviews')) || [];
+            const existingReviews = JSON.parse(localStorage.getItem('reviews') || '[]');
             const newReview = {
                 id: Date.now(),
+                movieId: movieId,
                 review: userReview,
                 date: new Date().toLocaleDateString(),
             };
@@ -21,6 +54,7 @@ const SujetStyles = ({ data }) => {
             setIsModalOpen(false);
         }
     };
+
 
     return (
         <div className='SujetStyles'>
@@ -79,14 +113,15 @@ const SujetStyles = ({ data }) => {
                         <div className='SujetStyles__box'>
                             <p className='SujetStyles__author'>{item.author}</p>
                             <p className='SujetStyles__review'>{item.review}</p>
-                            <p className='SujetStyles__date'>{item.date}</p>
+                            <p className='SujetStyles__date'>{dayjs(item.date).format('DD.MM.YYYY')}</p>
                         </div>
                     </SwiperSlide>
                 ))}
-                {JSON.parse(localStorage.getItem('reviews'))?.map((item) => (
+
+                {movieReviews.map((item) => (
                     <SwiperSlide key={item.id} style={{ width: 'auto' }}>
                         <div className='SujetStyles__box'>
-                            <p className='SujetStyles__author'>{item.author}</p>
+                            <p className='SujetStyles__author'>{item.movieId}</p>
                             <p className='SujetStyles__review'>{item.review}</p>
                             <p className='SujetStyles__date'>{item.date}</p>
                         </div>
@@ -94,7 +129,11 @@ const SujetStyles = ({ data }) => {
                 ))}
             </Swiper>
         </div>
+
     );
+
 };
 
 export default SujetStyles;
+
+

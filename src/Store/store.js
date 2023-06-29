@@ -1,8 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { moviesApi } from './Services/getAllMovie'
 import { posterApi } from './Services/getPoster'
-import React from 'react';
-import axios from 'axios';
+import { moviesApi } from './Services/getAllMovie.tsx';
 
 
 export const store = configureStore({
@@ -16,15 +14,3 @@ export const store = configureStore({
             posterApi.middleware,
         ),
 })
-
-
-
-const Home = () => {
-    const handleLogout = () => {
-
-        localStorage.removeItem('token');
-
-
-    };
-}
-

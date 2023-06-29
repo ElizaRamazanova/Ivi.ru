@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import vector from '../../assets/icons/Vector.png';
+import vector from '../../assets/icons/vector.png';
 import './RecommendMoviesStyle.scss';
 import { Link } from 'react-router-dom';
+import Card from '../Card/Card.tsx';
+import { MovieDataDocs, MovieType } from '../../shared/models';
 
+interface Props {
+    title: string,
+    data: MovieType[] | undefined
+}
 
-const RecommendMovies = ({ title, data }) => {
+const RecommendMovies = ({ title, data }: Props) => {
 
-    const [favorites, setFavorites] = useState([]);
+    const [favorites, setFavorites] = useState<any>([]);
 
     useEffect(() => {
-        const storedFavorites = JSON.parse(localStorage.getItem('favorites'));
+        const storedFavorites = JSON.parse(localStorage.getItem('favorites') || '[]');
         if (storedFavorites) {
             setFavorites(storedFavorites);
         }
@@ -39,24 +45,8 @@ const RecommendMovies = ({ title, data }) => {
                     <Link to='/favoriteMovies'>Все избранные</Link>
                 </button>
                 <div className='recommendStyles__block'>
-                    {data?.docs?.map((movie) => (
-                        <div key={movie.id}>
-                            <Link
-                                to={`/details/${movie.id}`}
-                                style={{
-                                    width: 'auto',
-                                }}
-                            >
-                                <img className='recommendStyles__posterImage ' src={movie?.poster?.previewUrl} alt={movie.title} />
-                                <div className='recommendStyles__movie-title'>{movie.name}</div>
-                            </Link>
-                            <button
-                                className='recommendStyles__favorite-btn'
-                                onClick={() => addToFavorites(movie)}
-                            >
-                                {favorites.some((favMovie) => favMovie.id === movie.id) ? 'Удалить из избранного' : 'В избранное'}
-                            </button>
-                        </div>
+                    {data?.map((movie) => (
+                        <Card movie={movie} favorites={favorites} onClickLocal={() => addToFavorites(movie)} />
                     ))}
                 </div>
             </div>

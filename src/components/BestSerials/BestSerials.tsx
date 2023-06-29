@@ -3,19 +3,19 @@ import { Pagination, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import vector from '../assets/icons/Vector.png';
-import { useGetPopularMoviesQuery } from '../../../Store/Services/getAllMovie.js';
+import vectorIcon from '../../assets/icons/vector.png';
 import './BestSerialsStyle.scss'
+import { useGetPopularMoviesQuery } from '../../Store/Services/getAllMovie';
+
 
 const BestSerials = () => {
     const { data } = useGetPopularMoviesQuery();
     return (
         <div>
             <button className='bestSerialStyle__posterText' >
-                Лучшие сериалы в подписке <img src={vector} alt="icon" />
+                Лучшие сериалы в подписке <img src={vectorIcon} alt="icon" />
             </button>
             <Swiper
-
                 slidesPerView={5}
                 centeredSlides={true}
                 spaceBetween={15}

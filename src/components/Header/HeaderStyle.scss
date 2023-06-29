@@ -130,7 +130,7 @@ header {
                 position: absolute;
                 top: 12px;
                 right: 10px;
-                background-color: #fff;
+                background-color: #281f55;
                 border-radius: 50%;
             }
         }
@@ -179,4 +179,16 @@ header {
             display: none;
         }
     }
+}
+
+.search_Modal {
+    background: black;
+    position: absolute;
+    top: 70px;
+    z-index: 100;
+    padding: 4px;
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    max-width: 200px;
 }
